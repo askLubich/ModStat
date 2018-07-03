@@ -7,7 +7,7 @@ Statistics about the moderator activity of [the subreddit /r/de](https://www.red
 ![alt text](modStat_lines.png "modstat summary")
 
 Most of the categories are pretty self explanatory. However, a couple of additional pieces
-of information might me useful:
+of information might me helpful:
 
 * Each time a post/comment is reported by a user or filtered by a bot, a moderator needs to make an approve/remove devision.
 
@@ -18,6 +18,8 @@ of information might me useful:
 * Therefore, the data about posts and comments does *not* reflect the total number of posts and comments, put only those that were reported or filtered. This is only a small subset.
 
 * The stacked distribution shows the amount of specific mod actions relative to the total number of actions usind the same color coding as in the rest of the visualization. The difference to 1 is made up of other mod actions (like setting sticky posts, unbanning, assigning flair), which are not explicitly listed here.
+
+* Unfortunately, I didn't save the data between 06.17 and 01.18 at the time and reddit does not allow accessing data that is older then 4 months. 
 
 ### Prerequisites
 
