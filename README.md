@@ -4,7 +4,7 @@ Statistics about the user and moderator activity of [the subreddit /r/de](https:
 
 ### Results
 
-![alt text](sstat.png "stat summary")
+![alt text](stat.png "stat summary")
 
 Most of the categories are pretty self explanatory. However, a couple of additional pieces
 of information might me helpful:
