@@ -1,10 +1,10 @@
 # ModStat
 
-Statistics about the moderator activity of [the subreddit /r/de](https://www.reddit.com/r/de/).
+Statistics about the user and moderator activity of [the subreddit /r/de](https://www.reddit.com/r/de/).
 
 ### Results
 
-![alt text](modStat_lines.png "modstat summary")
+![alt text](sstat.png "stat summary")
 
 Most of the categories are pretty self explanatory. However, a couple of additional pieces
 of information might me helpful:
