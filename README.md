@@ -6,20 +6,13 @@ Statistics about the user and moderator activity of [the subreddit /r/de](https:
 
 ![alt text](stat.png "stat summary")
 
-Most of the categories are pretty self explanatory. However, a couple of additional pieces
-of information might me helpful:
+* Each time a post/comment is reported by a user or filtered by a bot, a moderator needs to make an approve/remove devision. 
 
-* Each time a post/comment is reported by a user or filtered by a bot, a moderator needs to make an approve/remove devision.
+* The distribution of moderator acions is shown in "mod-actions per month".
 
-* "approved reported/filtered posts" shows the number of posts that have been approved by a moderator after being reported or filtered.
+* The fraction of all posts/comments on which a mod-action was taken is shown in the "fraction of posts/comments with mod action taken" figures.
 
-* The same goes for removed posts and approved/removed comments respectively.
-
-* Therefore, the data about posts and comments does *not* reflect the total number of posts and comments, put only those that were reported or filtered. This is only a small subset.
-
-* The stacked distribution shows the amount of specific mod actions relative to the total number of actions usind the same color coding as in the rest of the visualization. The difference to 1 is made up of other mod actions (like setting sticky posts, unbanning, assigning flair), which are not explicitly listed here.
-
-* Unfortunately, I didn't save the data between 06.17 and 01.18 at the time and reddit does not allow accessing data that is older then 4 months. 
+* Unfortunately, I did not save the data between 06.17 and 01.18 at the time and reddit does not allow accessing data that is older than 4 months. 
 
 ### Prerequisites
 
@@ -29,10 +22,18 @@ of information might me helpful:
     * matplotlib
     * numpy
     * sys
+    * collections
+    * datetime
+    * scipy
 
 ### Raw Data
 
-The raw data is contained in files named using the pattern "YYMM.csv". For instance "1610.csv" contains the data for October 2016. 
+##### User data
+
+User data was downloaded using collect.py. It makes use of [pushshift.io](https://pushshift.io/reddit/) and reddit's API via [praw](https://praw.readthedocs.io/en/latest/). 
+
+##### Moderation data
+
 The csv-files were downloaded from the moderation log using the moderation log matrix framework, supplied by the [reddit mod toolbox](https://www.reddit.com/r/toolbox/).
 Original files are not included for privacy reasons, since they contain the activity profiles of each moderator during each month.
 

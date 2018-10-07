@@ -3,9 +3,9 @@
 import fetch_content
 import logon
 
-start = '01.06.2017 00:00:00'
-end   = '30.06.2017 23:59:59'
-name  = '1706.dat'
+start = '01.09.2018 00:00:00'
+end   = '30.09.2018 23:59:59'
+name  = '1809.dat'
 
 user_agent = 'askLubich collecting some statistics about /r/de'
 
